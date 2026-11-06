@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusCode | Student Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="background.css">
+</head>
+
+<body class="dashboard-page">
+
+    <aside class="sidebar">
+
+        <a href="index.html" class="brand">
+            <div class="brand-mark">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="brand-text">
+                <strong>CAMPUSCODE</strong>
+                <small>HACKATHON ARENA</small>
+            </div>
+        </a>
+
+        <div class="sidebar-label">WORKSPACE</div>
+
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item active">
+                <span>▦</span> Overview <b>→</b>
+            </a>
+            <a href="#events" class="nav-item">
+                <span>♧</span> Events
+            </a>
+            <a href="#my-events" class="nav-item">
+                <span>◷</span> My Events
+            </a>
+            <a href="#" class="nav-item">
+                <span>✧</span> HackMate AI
+            </a>
+            <a href="#" class="nav-item">
+                <span>✧</span> IdeaCheck AI
+            </a>
+            <a href="#" class="nav-item">
+                <span>♙</span> Certificates
+            </a>
+            <a href="#" class="nav-item">
+                <span>▣</span> Digital Card
+            </a>
+            <a href="#" class="nav-item">
+                <span>♧</span> RuleBot AI
+                <small class="ai-label">AI</small>
+            </a>
+            <a href="#" class="nav-item">
+                <span>♧</span> Student Guide
+            </a>
+            <a href="#" class="nav-item">
+                <span>♧</span> Official Communication
+            </a>
+            <a href="#" class="nav-item">
+                <span>♧</span> Notifications
+            </a>
+            <a href="#" class="nav-item">
+                <span>♧</span> Help & Support
+            </a>
+            <a href="#" class="nav-item">
+                <span>◎</span> Profile
+            </a>
+        </nav>
+
+        <div class="sidebar-account">
+            <div class="sidebar-label">ACCOUNT</div>
+
+            <div class="account-info">
+                <div class="account-initials">SK</div>
+                <div>
+                    <strong>Soham Kiran Patil</strong>
+                    <small>STUDENT</small>
+                </div>
+            </div>
+
+            <a href="login.html" class="logout-btn">↪ LOG OUT</a>
+        </div>
+
+    </aside>
+
+    <div class="main-area">
+
+        <header class="topbar">
+            <div class="topbar-breadcrumb">
+                <small>CAMPUSCODE / STUDENT</small>
+                <strong>OVERVIEW</strong>
+            </div>
+
+            <div class="topbar-actions">
+                <button class="notification-btn">♧ <span>2</span></button>
+                <button class="refresh-btn" onclick="location.reload()">
+                    ↻ &nbsp; REFRESH
+                </button>
+
+                <div class="topbar-user">
+                    <div class="user-avatar">👨🏻</div>
+                    <strong>Soham Kiran Patil</strong>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-content">
+
+            <section class="welcome-section">
+                <p class="live-label">STUDENT WORKSPACE / LIVE</p>
+
+                <h1>
+                    WELCOME BACK,
+                    <span>SOHAM</span>.
+                </h1>
+
+                <p class="welcome-description">
+                    Your CampusCode activity is loaded directly from the backend.
+                </p>
+            </section>
+
+            <section class="event-card" id="events">
+
+                <div class="event-content">
+                    <p class="event-label">BUILD · LEARN · COLLABORATE</p>
+
+                    <h2>ReBuild '26</h2>
+
+                    <p class="event-description">
+                        ReBuild '26 is an individual dashboard-recreation hackathon by
+                        CampusCode. You participate alone, but you must create a team
+                        name for tracking and use it on your Unstop registration, the
+                        CampusCode portal, and every submission. Round 1 (Friday, 6 Nov,
+                        morning to 10 PM): Recreate the CampusCode user flow faithfully —
+                        Dashboard, Login, Register, and Student dashboard — and submit
+                        your demo any time till 10 PM. Round 2 (Saturday, 7 Nov, top
+                        performers from Round 1 only): Build a complete new UI in
+                        CampusCode's vibe. Frontend only, mock data is fine. No
+                        presentation round. Prizes: Winner certificate + CampusCode
+                        internship with ₹15,000 stipend, runner-up certificate, and
+                        participation certificates for all. Sunday, 8 Nov (Diwali) is
+                        free. This is a paid event (₹50 on Unstop). Paid students
+                        receive an invite code — enter it when you join this event
+                        on the portal.
+                    </p>
+
+                    <a href="https://unstop.com/" target="_blank" class="open-event-btn">
+                        OPEN EVENT <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="event-visual">
+                    <div class="avatar-main">👨🏻</div>
+                    <div class="avatar-secondary">RE</div>
+                </div>
+
+            </section>
+
+            <section class="stats-grid">
+
+                <div class="stat-card">
+                    <p>REGISTERED</p>
+                    <h3>1</h3>
+                    <span>FROM BACKEND</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>ONGOING</p>
+                    <h3>1</h3>
+                    <span>FROM BACKEND</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>COMPLETED</p>
+                    <h3>0</h3>
+                    <span>FROM BACKEND</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>CERTIFICATES</p>
+                    <h3>0</h3>
+                    <span>FROM BACKEND</span>
+                </div>
+
+            </section>
+
+            <section class="my-events-section" id="my-events">
+                <div class="my-events-heading">
+                    <div>
+                        <p>YOUR ACTIVITY</p>
+                        <h2>MY EVENTS</h2>
+                    </div>
+                    <span>01 EVENT</span>
+                </div>
+
+                <div class="my-event-row">
+                    <div>
+                        <small>● ONGOING</small>
+                        <h3>ReBuild '26</h3>
+                        <p>CampusCode · Hackathon</p>
+                    </div>
+                    <a href="https://unstop.com/" target="_blank">VIEW ↗</a>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        const refreshButton = document.querySelector(".refresh-btn");
+
+        refreshButton.addEventListener("click", () => {
+            refreshButton.textContent = "↻  REFRESHING...";
+            setTimeout(() => {
+                refreshButton.innerHTML = "↻ &nbsp; REFRESH";
+            }, 700);
+        });
+    </script>
+
+</body>
+</html>

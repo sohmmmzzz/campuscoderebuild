@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | CampusCode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="background.css">
+</head>
+<body class="auth-page">
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo">
+                <span class="slash black"></span>
+                <span class="slash purple"></span>
+                <span class="slash lime"></span>
+            </div>
+            <span>CAMPUSCODE</span>
+        </a>
+        <a href="register.html" class="login-link">
+            REGISTER ↗
+        </a>
+    </header>
+
+    <main class="auth-container">
+        <section class="auth-intro">
+            <span class="section-label">01 / WELCOME BACK</span>
+            <h1>
+                ENTER<br>
+                THE<br>
+                <span class="outline-text">ARENA.</span>
+            </h1>
+            <p>
+                Your next big idea starts here.
+                Sign in and get back to building,
+                competing and creating.
+            </p>
+            <div class="auth-tags">
+                <span>BUILD</span>
+                <span>COMPETE</span>
+                <span>SHIP</span>
+            </div>
+        </section>
+
+        <section class="auth-form-wrapper">
+            <div class="auth-card">
+                <div class="form-heading">
+                    <span class="section-label">CAMPUSCODE / ACCOUNT</span>
+                    <h2>LOGIN<span>.</span></h2>
+                    <p>Welcome back. Enter your details below.</p>
+                </div>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">EMAIL ADDRESS</label>
+                        <input type="email" id="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">PASSWORD</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                            <button type="button" class="show-password" id="togglePassword">SHOW</button>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-option">
+                            <input type="checkbox" id="remember">
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="auth-submit">LOGIN TO ACCOUNT ↗</button>
+                    <p id="loginMessage" class="form-message"></p>
+                </form>
+
+                <div class="auth-divider">
+                    <span>NEW TO CAMPUSCODE?</span>
+                </div>
+
+                <a href="register.html" class="register-button">CREATE AN ACCOUNT ↗</a>
+            </div>
+            <p class="auth-bottom-text">LEARN. BUILD. COMPETE. SHIP.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
